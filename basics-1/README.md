@@ -42,7 +42,9 @@ In summary, a library provides specific functions or tools that developers can u
 to solve particular problems or tasks, while a framework provides a more structured and
 comprehensive environment that defines the overall architecture of an application and
 guides developers in building it.
-→ What is CDN ? Why do we use it ?
+
+# What is CDN ? Why do we use it ?
+
 → CDN stands for Content Delivery Network. The purpose of CDN is o deliver digital
 content like web pages, images, scripts, etc. We have used CDN to inject React
 into our application. Here, the React is hosted in CDN and we have CDN script link
