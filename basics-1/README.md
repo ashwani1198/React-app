@@ -10,12 +10,15 @@ HTML and CSS structures quickly. For example, you can type an abbreviation like
 div>ul>li\*2 and then use the Emmet expansion feature to automatically generate
 the following code:
 
+```
 <div>
  <ul>
  <li></li>
  <li></li>
  </ul>
 </div>
+
+```
 
 # Difference between a Library and a Framework ?
 
