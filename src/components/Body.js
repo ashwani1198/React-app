@@ -40,7 +40,6 @@ const Body = () => {
     <div className="min-h-screen w-full">
       <div className="flex justify-center space-x-3 p-3">
         <div className="">
-          {searchText}
           <input
             type="text"
             className="border border-orange-400 outline-none rounded-full w-[500px] px-4 py-3"
@@ -82,7 +81,7 @@ const Body = () => {
           Top rated restaurants 🔥
         </button>
       </div>
-      <div className="w-full grid grid-cols-4 gap-3 p-2">
+      <div className="w-full grid grid-cols-4 gap-3 px-[120px] py-[20px]">
         {filteredRestaurant?.map((restaurant) => {
           return (
             <Link key={restaurant.info.id} to={`/restaurants/${restaurant.info.id}`}>

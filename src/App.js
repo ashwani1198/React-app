@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const Applayout = () => {
   return (
-    <div className="app">
+    <div className="min-h-screen w-full">
       <Header />
       <Outlet />
     </div>
