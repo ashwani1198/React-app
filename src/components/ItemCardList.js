@@ -1,4 +1,13 @@
+import { useDispatch } from "react-redux"; 
+import { addItem } from "../../store/Modules/cartSlice";
 const ItemCardList = ({ items }) => {
+  
+  const dispatch  = useDispatch()
+
+  const handleAddItem = (item) => {
+    //dispatch an action 
+    dispatch(addItem(item))
+  }
   return (
     <div>
       {items.map((item) => (
@@ -27,7 +36,7 @@ const ItemCardList = ({ items }) => {
                 ""
               )}
               <div className="absolute border  shadow-md rounded-sm align-middle styles_itemAddButton__zJ7-R z-10 bottom-[8px] bg-white w-[96px] h-[36px]">
-                <button className="text-green-500 align-middle">Add + </button>
+                <button className="text-green-500 align-middle" onClick={() => handleAddItem(item)}>Add + </button>
               </div>
             </div>
           </div>
